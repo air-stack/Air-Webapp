@@ -1,7 +1,7 @@
 package com.ten.air.dao;
 
 import com.ten.air.entity.AirRecord;
-import com.ten.air.util.MysqlConnection;
+import com.ten.air.util.JdbcConnection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,7 +29,7 @@ public class AirRecordDAO {
      * 获取所有数据
      */
     public List<AirRecord> getAllRecord() throws SQLException {
-        Connection c = MysqlConnection.getConnection();
+        Connection c = JdbcConnection.getConnection();
         PreparedStatement p = c.prepareStatement(SELECT_ALL);
         ResultSet result = p.executeQuery();
 

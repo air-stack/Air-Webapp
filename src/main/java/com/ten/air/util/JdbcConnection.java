@@ -13,8 +13,8 @@ import java.sql.SQLException;
  * @author wshten
  * @date 2018/11/9
  */
-public class MysqlConnection {
-    private static Logger logger = LoggerFactory.getLogger(MysqlConnection.class);
+public class JdbcConnection {
+    private static Logger logger = LoggerFactory.getLogger(JdbcConnection.class);
     private static final String HOST = "111.230.244.153";
     private static final int PORT = 3306;
     private static final String DATABASE = "air";
@@ -24,7 +24,7 @@ public class MysqlConnection {
             "jdbc:mysql://%s:%d/%s" + "?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false",
             HOST, PORT, DATABASE);
 
-    private MysqlConnection() {
+    private JdbcConnection() {
         logger.error("JDBC init error");
         throw new AssertionError();
     }
@@ -58,6 +58,6 @@ public class MysqlConnection {
      * @throws SQLException 获取连接失败
      */
     public static void main(String[] args) throws SQLException {
-        Connection c = MysqlConnection.getConnection();
+        Connection c = JdbcConnection.getConnection();
     }
 }

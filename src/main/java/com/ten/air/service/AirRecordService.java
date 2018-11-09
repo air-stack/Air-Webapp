@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class AirRecordService {
             return dao.getAllRecord();
         } catch (SQLException e) {
             e.printStackTrace();
-            return null;
+            return new ArrayList<>(1);
         }
     }
 }
