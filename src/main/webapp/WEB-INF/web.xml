@@ -9,13 +9,28 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>airRecordController</servlet-name>
         <servlet-class>com.ten.air.controller.AirRecordController</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>airRecordController</servlet-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>record.do</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userController</servlet-name>
+        <servlet-class>com.ten.air.controller.UserController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userController</servlet-name>
+        <url-pattern>login.do</url-pattern>
+    </servlet-mapping>
+
 </web-app>

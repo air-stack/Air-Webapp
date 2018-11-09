@@ -20,20 +20,15 @@ import java.util.List;
  */
 public class AirRecordController extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(AirRecordController.class);
-    /**
-     * 业务逻辑Service单例
-     */
     private AirRecordService service = AirRecordService.getService();
-    /**
-     * 转发URL
-     */
+
     private static final String URL = "/data.jsp";
 
     /**
      * 获取所有数据
      *
      * @param req all data
-     * @mapping /air/record [GET]
+     * @mapping record.do
      */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -46,10 +41,10 @@ public class AirRecordController extends HttpServlet {
     }
 
     /**
-     * 条件查询数据
+     * TODO 条件查询数据
      *
      * @param req condition
-     * @mapping /air/record [POST]
+     * @mapping query.do
      */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
