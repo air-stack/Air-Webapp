@@ -41,10 +41,11 @@ public class AirRecordDAO {
             record.setTemperature(result.getString("temperature"));
             record.setCo2(result.getString("co2"));
             record.setSo2(result.getString("so2"));
-            record.setRecordTime(result.getString("recordTime"));
-            record.setRecordImei(result.getString("recordImei"));
-            record.setUpdateTime(result.getString("updateTime"));
+            record.setRecordTime(result.getString("record_time"));
+            record.setRecordImei(result.getString("record_imei"));
+            record.setUpdateTime(result.getString("update_time"));
 
+            logger.info(String.valueOf(record));
             records.add(record);
         }
         return records;
