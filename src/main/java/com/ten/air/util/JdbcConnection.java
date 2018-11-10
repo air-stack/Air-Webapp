@@ -1,5 +1,6 @@
 package com.ten.air.util;
 
+import com.ten.air.constant.MysqlConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,14 +16,6 @@ import java.sql.SQLException;
  */
 public class JdbcConnection {
     private static Logger logger = LoggerFactory.getLogger(JdbcConnection.class);
-    private static final String HOST = "111.230.244.153";
-    private static final int PORT = 3306;
-    private static final String DATABASE = "air";
-    private static final String USER = "root";
-    private static final String PASSWORD = "wangshihao";
-    private static final String URL = String.format(
-            "jdbc:mysql://%s:%d/%s" + "?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false",
-            HOST, PORT, DATABASE);
 
     private JdbcConnection() {
         logger.error("JDBC init error");
@@ -45,7 +38,7 @@ public class JdbcConnection {
      * @throws NullPointerException 连接关闭
      */
     public static Connection getConnection() throws SQLException {
-        Connection c = DriverManager.getConnection(URL, USER, PASSWORD);
+        Connection c = DriverManager.getConnection(MysqlConfig.URL, MysqlConfig.USER, MysqlConfig.PASSWORD);
         if (c.isClosed()) {
             throw new IllegalAccessError("Connection is closed");
         }
