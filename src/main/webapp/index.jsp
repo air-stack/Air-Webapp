@@ -13,12 +13,23 @@
 </head>
 
 <script type="application/javascript">
+    // 关闭登录窗口
     $(document).ready(function (c) {
         $('.close').on('click', function (c) {
             $('.login-form').fadeOut('slow', function (c) {
                 $('.login-form').remove();
             });
         });
+    });
+</script>
+
+<script type="application/javascript">
+    // 弹出登录信息
+    $(document).ready(function (c) {
+        var error = '${errormsg}';
+        if (error != null) {
+            alert(error)
+        }
     });
 </script>
 
@@ -37,20 +48,18 @@
     </div>
     <form action="login.do" method="post">
         <label>
-            <input type="text" class="text" value="Username" name="Username"
+            <input type="text" class="text" value="admin" name="Username"
                    onFocus="this.value = '';"
                    onBlur="if (this.value === '') {this.value = 'Username';}">
         </label>
         <div class="key">
             <label>
-                <input type="password" value="Password" name="Password"
+                <input type="password" value="123456" name="Password"
                        onFocus="this.value = '';"
                        onBlur="if (this.value === '') {this.value = 'Password';}">
             </label>
         </div>
-        <div class="signin">
-            <button type="submit">登录</button>
-        </div>
+        <div class="signin"><input type="submit" value="Login"></div>
     </form>
 
 </div>

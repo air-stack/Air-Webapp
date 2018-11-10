@@ -9,7 +9,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -20,8 +19,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 ol, ul {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 blockquote, q {
@@ -29,7 +28,6 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
     content: none;
 }
 
@@ -110,13 +108,13 @@ img {
 /*end reset*/
 /****-----start-body----****/
 body {
-    background: url(../img/bg1.jpg) no-repeat 0px 0px;
+    background: url(../img/bg1.jpg) no-repeat 0 0;
     font-family: 'Open Sans', sans-serif;
     background-size: cover;
+    height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    min-height: 1050px;
 }
 
 .wrap {

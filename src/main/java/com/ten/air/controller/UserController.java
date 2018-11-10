@@ -49,6 +49,7 @@ public class UserController extends HttpServlet {
             req.getRequestDispatcher(SUCCESS).forward(req, resp);
         } else {
             logger.info("User Login Failure:" + name + "," + password);
+            req.setAttribute("errormsg", "登录失败");
             req.getRequestDispatcher(FAIL).forward(req, resp);
         }
     }

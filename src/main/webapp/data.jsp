@@ -1,11 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: ten
-  Date: 2018/11/9
-  Time: 11:04
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -17,44 +10,49 @@
     <div>共有 ${records.size()}</div>
 
     <%--@elvariable id="records" type="java.util.List"--%>
-    <c:forEach items="${records}" var="record">
-        <div class="record-object">
-            <div class="record-item">
-                ID:
-                    ${record.id}
-            </div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>温度</th>
+            <th>CO2浓度</th>
+            <th>SO2浓度</th>
+            <th>记录时间</th>
+            <th>记录设备</th>
+            <th>更新时间</th>
+        </tr>
 
-            <div class="record-item">
-                温度:
-                    ${record.temperature}
-            </div>
+        <c:forEach items="${records}" var="record">
+            <tr class="record-object">
+                <td class="record-item">
+                        ${record.id}
+                </td>
 
-            <div class="record-item">
-                CO2浓度:
-                    ${record.co2}
-            </div>
+                <td class="record-item">
+                        ${record.temperature}
+                </td>
 
-            <div class="record-item">
-                SO2浓度:
-                    ${record.so2}
-            </div>
+                <td class="record-item">
+                        ${record.co2}
+                </td>
 
-            <div class="record-item">
-                记录时间:
-                    ${record.recordTime}
-            </div>
+                <td class="record-item">
+                        ${record.so2}
+                </td>
 
-            <div class="record-item">
-                记录设备:
-                    ${record.recordImei}
-            </div>
+                <td class="record-item">
+                        ${record.recordTime}
+                </td>
 
-            <div class="record-item">
-                更新时间:
-                    ${record.updateTime}
-            </div>
-        </div>
-    </c:forEach>
+                <td class="record-item">
+                        ${record.recordImei}
+                </td>
+
+                <td class="record-item">
+                        ${record.updateTime}
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
 </div>
 
 </body>
