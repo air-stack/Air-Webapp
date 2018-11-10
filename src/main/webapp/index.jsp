@@ -33,17 +33,17 @@
     </div>
     <div class="clear"></div>
     <div class="avtar">
-        <img src="images/avtar.png"/>
+        <img src="img/avtar.png"/>
     </div>
     <form action="login.do" method="post">
         <label>
-            <input type="text" class="text" value="Username"
+            <input type="text" class="text" value="Username" name="Username"
                    onFocus="this.value = '';"
                    onBlur="if (this.value === '') {this.value = 'Username';}">
         </label>
         <div class="key">
             <label>
-                <input type="password" value="Password"
+                <input type="password" value="Password" name="Password"
                        onFocus="this.value = '';"
                        onBlur="if (this.value === '') {this.value = 'Password';}">
             </label>

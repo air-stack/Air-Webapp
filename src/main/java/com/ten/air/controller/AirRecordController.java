@@ -32,22 +32,15 @@ public class AirRecordController extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("Recieve [GET] request");
+        doPost(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<AirRecord> records = service.getAllRecord();
         logger.info("Records:" + records);
         // 执行转发
         req.setAttribute("records", records);
         req.getRequestDispatcher(URL).forward(req, resp);
-    }
-
-    /**
-     * TODO 条件查询数据
-     *
-     * @param req condition
-     * @mapping query.do
-     */
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("Recieve [POST] request");
     }
 }
