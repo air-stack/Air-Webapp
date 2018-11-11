@@ -8,6 +8,12 @@ jsp + servlet + jdbc + mysql
 
 > 登录账号:admin 登录密码:123456
 
+## 数据获取(物联网)
+
+通过物联网设备采集数据，通过WIFI模块发送HTTP数据包到WEB_SERVER，解码数据包并将数据存储到数据库
+
+WEB_SERVER项目详见：[https://github.com/kevinten10/Air-Server]
+
 ## 使用
 
 ```txt

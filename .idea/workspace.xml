@@ -7,12 +7,39 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="144e6774-2118-4c3e-b0d7-0cc63affbdb1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/constant/AirRecord.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/constant/MysqlConfig.java" afterDir="false" />
+    <list default="true" id="144e6774-2118-4c3e-b0d7-0cc63affbdb1" name="Default" comment="readme">
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war/air-web_war.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/constant/AirRecord.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/constant/MysqlConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/controller/AirRecordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/dao/AirRecordDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/entity/AirRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/service/AirRecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/com/ten/air/util/JdbcConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/lib/jstl-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/lib/jstl-impl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/lib/protobuf-java-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/lib/slf4j-api-1.7.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/lib/slf4j-log4j12-1.7.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/img/adm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/img/avtar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/img/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/img/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/img/pass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/air_web_war_exploded/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/air/util/JdbcConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/util/JdbcConnection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,14 +52,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AirRecordController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/controller/AirRecordController.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="273">
+                <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/data.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-763">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -40,24 +103,12 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="168">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="e#274#275#0" expanded="true" />
                 <element signature="e#343#344#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="231">
-                <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -100,36 +151,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="840">
               <caret line="40" column="98" selection-start-line="40" selection-start-column="98" selection-end-line="40" selection-end-column="98" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MysqlConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/constant/MysqlConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AirRecord.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/constant/AirRecord.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -363,7 +384,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Air" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -545,7 +566,7 @@
       <workItem from="1541744779999" duration="2972000" />
       <workItem from="1541748277985" duration="2629000" />
       <workItem from="1541759265761" duration="1727000" />
-      <workItem from="1541840881594" duration="6686000" />
+      <workItem from="1541840881594" duration="7316000" />
     </task>
     <task id="LOCAL-00001" summary="air web">
       <created>1541736419856</created>
@@ -589,11 +610,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541846871559</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="readme">
+      <created>1541847781770</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541847781770</updated>
+    </task>
+    <task id="LOCAL-00008" summary="readme">
+      <created>1541847847087</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1541847847088</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23897000" />
+    <option name="totallyTimeSpent" value="24527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -621,7 +656,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31314623" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2705803" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2705803" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -643,7 +678,8 @@
     <MESSAGE value="air web" />
     <MESSAGE value="resolve resource bug" />
     <MESSAGE value="push" />
-    <option name="LAST_COMMIT_MESSAGE" value="push" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/dao/AirRecordDAO.java">
@@ -839,20 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../网页模板/Semantic-UI-master/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1372" />
@@ -907,23 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
-          <folding>
-            <element signature="e#2002#2008#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/data.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -931,9 +936,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/constant/AirRecord.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/constant/MysqlConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/controller/AirRecordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="182">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -943,7 +962,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
+        <state relative-caret-position="56">
           <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -968,17 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/service/AirRecordService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -989,17 +997,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/constant/AirRecord.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/constant/MysqlConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,13 +1018,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/data.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-763">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="231">
-            <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <first_editor relative-caret-position="273">
+            <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1082,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Web (air-web)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1108,7 +1141,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: org.apache.tomcat:tomcat-servlet-api:8.0.36</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
