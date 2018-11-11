@@ -10,7 +10,7 @@ jsp + servlet + jdbc + mysql
 
 ## 数据获取(物联网)
 
-通过物联网设备采集数据，通过WIFI模块发送HTTP数据包到WEB_SERVER，解码数据包并将数据存储到数据库
+通过物联网设备采集数据，通过WIFI模块发送TCP数据包到WEB_SERVER，解码数据包并将数据存储到数据库
 
 WEB_SERVER项目详见：[https://github.com/kevinten10/Air-Server]
 
