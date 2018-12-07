@@ -1,7 +1,7 @@
-package com.ten.air.dao;
+package com.ten.air.web.dao;
 
-import com.ten.air.entity.AirRecord;
-import com.ten.air.util.JdbcConnection;
+import com.ten.air.web.entity.AirRecord;
+import com.ten.air.web.util.JdbcConnection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,7 +42,7 @@ public class AirRecordDAO {
             record.setCo2(result.getString("co2"));
             record.setSo2(result.getString("so2"));
             record.setRecordTime(result.getString("record_time"));
-            record.setRecordImei(result.getString("record_imei"));
+            record.setImei(result.getString("record_imei"));
             record.setUpdateTime(result.getString("update_time"));
 
             logger.info(String.valueOf(record));

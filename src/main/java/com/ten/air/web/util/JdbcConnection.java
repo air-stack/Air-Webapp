@@ -1,6 +1,6 @@
-package com.ten.air.util;
+package com.ten.air.web.util;
 
-import com.ten.air.constant.MysqlConfig;
+import com.ten.air.web.constant.MysqlConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

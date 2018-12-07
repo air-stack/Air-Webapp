@@ -1,6 +1,6 @@
-package com.ten.air.controller;
+package com.ten.air.web.controller;
 
-import com.ten.air.service.UserService;
+import com.ten.air.web.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

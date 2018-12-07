@@ -21,7 +21,7 @@
 
     <servlet>
         <servlet-name>airRecordController</servlet-name>
-        <servlet-class>com.ten.air.controller.AirRecordController</servlet-class>
+        <servlet-class>com.ten.air.web.controller.AirRecordController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>airRecordController</servlet-name>
@@ -30,7 +30,7 @@
 
     <servlet>
         <servlet-name>userController</servlet-name>
-        <servlet-class>com.ten.air.controller.UserController</servlet-class>
+        <servlet-class>com.ten.air.web.controller.UserController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>userController</servlet-name>

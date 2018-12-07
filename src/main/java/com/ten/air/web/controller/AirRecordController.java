@@ -1,7 +1,7 @@
-package com.ten.air.controller;
+package com.ten.air.web.controller;
 
-import com.ten.air.entity.AirRecord;
-import com.ten.air.service.AirRecordService;
+import com.ten.air.web.entity.AirRecord;
+import com.ten.air.web.service.AirRecordService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,7 +1,7 @@
-package com.ten.air.service;
+package com.ten.air.web.service;
 
-import com.ten.air.dao.AirRecordDAO;
-import com.ten.air.entity.AirRecord;
+import com.ten.air.web.dao.AirRecordDAO;
+import com.ten.air.web.entity.AirRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package com.ten.air.entity;
+package com.ten.air.web.entity;
 
 /**
  * Atmospheric monitoring record 大气监测记录
@@ -9,9 +9,17 @@ public class AirRecord {
      */
     private Integer id;
     /**
+     * Record Imei 记录设备
+     */
+    private String imei;
+    /**
      * Temperature 温度
      */
     private String temperature;
+    /**
+     * PM 2.5 Concentration
+     */
+    private String pm25;
     /**
      * Carbon Dioxide Concentration CO2浓度
      */
@@ -25,38 +33,56 @@ public class AirRecord {
      */
     private String recordTime;
     /**
-     * Record Imei 记录设备
-     */
-    private String recordImei;
-    /**
      * Update Time 更新时间
      */
     private String updateTime;
+    /**
+     * is deleted 0:n 1:y
+     */
+    private Integer isDeleted;
 
     public AirRecord() {
     }
 
-    public AirRecord(Integer id, String temperature, String co2, String so2, String recordTime, String recordImei, String updateTime) {
+    public AirRecord(Integer id, String temperature, String co2, String so2, String recordTime, String imei, String updateTime) {
         this.id = id;
         this.temperature = temperature;
         this.co2 = co2;
         this.so2 = so2;
         this.recordTime = recordTime;
-        this.recordImei = recordImei;
+        this.imei = imei;
         this.updateTime = updateTime;
     }
 
     @Override
     public String toString() {
-        return "AirRecord@{" +
-                "id:" + id + "," +
-                "temperature:" + temperature + "," +
-                "co2:" + co2 + "," +
-                "so2:" + so2 + "," +
-                "recordTime:" + recordTime + "," +
-                "recordImei:" + recordImei + "," +
-                "updateTime:" + updateTime +
-                "}";
+        return "AirRecord{" +
+                "id=" + id +
+                ", imei='" + imei + '\'' +
+                ", temperature='" + temperature + '\'' +
+                ", pm25='" + pm25 + '\'' +
+                ", co2='" + co2 + '\'' +
+                ", so2='" + so2 + '\'' +
+                ", recordTime='" + recordTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", isDeleted=" + isDeleted +
+                '}';
+    }
+
+    public Integer getIsDeleted() {
+        return isDeleted;
+    }
+
+    public void setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+    }
+
+    public String getPm25() {
+        return pm25;
+    }
+
+    public void setPm25(String pm25) {
+        this.pm25 = pm25;
     }
 
     public Integer getId() {
@@ -99,12 +125,12 @@ public class AirRecord {
         this.recordTime = recordTime;
     }
 
-    public String getRecordImei() {
-        return recordImei;
+    public String getImei() {
+        return imei;
     }
 
-    public void setRecordImei(String recordImei) {
-        this.recordImei = recordImei;
+    public void setImei(String imei) {
+        this.imei = imei;
     }
 
     public String getUpdateTime() {

@@ -1,4 +1,4 @@
-package com.ten.air.constant;
+package com.ten.air.web.constant;
 
 /**
  * FIXME 修改数据库配置
