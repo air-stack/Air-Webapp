@@ -16,7 +16,6 @@ import java.util.List;
  * AirRecord数据库访问
  */
 public class AirRecordDAO {
-    private static final Logger logger = LoggerFactory.getLogger(AirRecordDAO.class);
     private static final AirRecordDAO DAO = new AirRecordDAO();
 
     public static AirRecordDAO getDao() {
@@ -38,14 +37,17 @@ public class AirRecordDAO {
             AirRecord record = new AirRecord();
 
             record.setId(Integer.valueOf(result.getString("id")));
+            record.setSource(result.getString("source"));
+            record.setImei(result.getString("imei"));
             record.setTemperature(result.getString("temperature"));
+            record.setPm25(result.getString("pm25"));
             record.setCo2(result.getString("co2"));
             record.setSo2(result.getString("so2"));
             record.setRecordTime(result.getString("record_time"));
-            record.setImei(result.getString("record_imei"));
             record.setUpdateTime(result.getString("update_time"));
+            record.setIsDeleted(Integer.valueOf(result.getString("is_deleted")));
 
-            logger.info(String.valueOf(record));
+            System.out.println(String.valueOf(record));
             records.add(record);
         }
         return records;

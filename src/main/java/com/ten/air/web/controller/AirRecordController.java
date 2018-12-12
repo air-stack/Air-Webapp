@@ -19,7 +19,6 @@ import java.util.List;
  * @date 2018/11/9
  */
 public class AirRecordController extends HttpServlet {
-    private static final Logger logger = LoggerFactory.getLogger(AirRecordController.class);
     private AirRecordService service = AirRecordService.getService();
 
     private static final String URL = "/data.jsp";
@@ -38,7 +37,7 @@ public class AirRecordController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<AirRecord> records = service.getAllRecord();
-        logger.info("Records:" + records);
+        System.out.println("Records:" + records);
         // 执行转发
         req.setAttribute("records", records);
         req.getRequestDispatcher(URL).forward(req, resp);

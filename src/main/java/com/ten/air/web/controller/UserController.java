@@ -17,7 +17,6 @@ import java.io.IOException;
  * @date 2018/11/9
  */
 public class UserController extends HttpServlet {
-    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     private volatile UserService service = new UserService();
 
     /**
@@ -39,16 +38,16 @@ public class UserController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("Username");
         String password = req.getParameter("Password");
-        logger.info("Recieve New Login Request:" + name + "," + password);
+        System.out.println("Recieve New Login Request:" + name + "," + password);
 
         // 登录校验
         boolean success = service.login(name, password);
 
         if (success) {
-            logger.info("User Login Success:" + name + "," + password);
+            System.out.println("User Login Success:" + name + "," + password);
             req.getRequestDispatcher(SUCCESS).forward(req, resp);
         } else {
-            logger.info("User Login Failure:" + name + "," + password);
+            System.out.println("User Login Failure:" + name + "," + password);
             req.setAttribute("errormsg", "登录失败");
             req.getRequestDispatcher(FAIL).forward(req, resp);
         }

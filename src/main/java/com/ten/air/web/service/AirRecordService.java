@@ -16,7 +16,6 @@ import java.util.List;
  * @date 2018/11/9
  */
 public class AirRecordService {
-    private static final Logger logger = LoggerFactory.getLogger(AirRecordService.class);
     private static final AirRecordService SERVICE = new AirRecordService();
 
     public static AirRecordService getService() {

@@ -15,10 +15,8 @@ import java.sql.SQLException;
  * @date 2018/11/9
  */
 public class JdbcConnection {
-    private static Logger logger = LoggerFactory.getLogger(JdbcConnection.class);
 
     private JdbcConnection() {
-        logger.error("JDBC init error");
         throw new AssertionError();
     }
 

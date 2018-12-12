@@ -1,6 +1,6 @@
 # Air Webapp
 
-> 大气环境检测系统的WEB站点
+> 大气环境检测系统的WEB数据展示网站，只有简单的登录+展示两个界面，后端采用Servlet+Jdbc搭建，方便理解和掌握。
 
 ## 技术栈
 
@@ -10,9 +10,11 @@ jsp + servlet + jdbc + mysql
 
 ## 数据获取(物联网)
 
-通过物联网设备采集数据，通过WIFI模块发送TCP数据包到WEB_SERVER，解码数据包并将数据存储到数据库
+通过 物联网设备 / 数据模拟服务 采集数据，通过WIFI模块发送TCP数据包到TCP_SERVER，解码数据包并将数据通过HTTP发送到数据交互后台BACK服务，进行数据存储。
 
-WEB_SERVER项目详见：[https://github.com/kevinten10/Air-Server]
+然后Webapp通过Jdbc访问MySQL数据库，将数据展示到WEB网站。
+
+项目详见：[https://github.com/kevinten10/Air]
 
 ## 使用
 

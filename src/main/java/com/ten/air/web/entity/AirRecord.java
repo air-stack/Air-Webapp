@@ -9,6 +9,10 @@ public class AirRecord {
      */
     private Integer id;
     /**
+     * Device Source 设备来源 0:真机 1:虚拟
+     */
+    private String source;
+    /**
      * Record Imei 记录设备
      */
     private String imei;
@@ -44,20 +48,11 @@ public class AirRecord {
     public AirRecord() {
     }
 
-    public AirRecord(Integer id, String temperature, String co2, String so2, String recordTime, String imei, String updateTime) {
-        this.id = id;
-        this.temperature = temperature;
-        this.co2 = co2;
-        this.so2 = so2;
-        this.recordTime = recordTime;
-        this.imei = imei;
-        this.updateTime = updateTime;
-    }
-
     @Override
     public String toString() {
         return "AirRecord{" +
                 "id=" + id +
+                ", source=" + source + '\'' +
                 ", imei='" + imei + '\'' +
                 ", temperature='" + temperature + '\'' +
                 ", pm25='" + pm25 + '\'' +
@@ -67,6 +62,14 @@ public class AirRecord {
                 ", updateTime='" + updateTime + '\'' +
                 ", isDeleted=" + isDeleted +
                 '}';
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
     }
 
     public Integer getIsDeleted() {
