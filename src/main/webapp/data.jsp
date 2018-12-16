@@ -13,12 +13,14 @@
     <table>
         <tr>
             <th>ID</th>
+            <th>设备号</th>
             <th>温度</th>
+            <th>PM2.5</th>
             <th>CO2浓度</th>
             <th>SO2浓度</th>
             <th>记录时间</th>
-            <th>记录设备</th>
             <th>更新时间</th>
+            <th>过期标记</th>
         </tr>
 
         <c:forEach items="${records}" var="record">
@@ -28,7 +30,15 @@
                 </td>
 
                 <td class="record-item">
+                        ${record.imei}
+                </td>
+
+                <td class="record-item">
                         ${record.temperature}
+                </td>
+
+                <td class="record-item">
+                        ${record.pm25}
                 </td>
 
                 <td class="record-item">
@@ -44,11 +54,11 @@
                 </td>
 
                 <td class="record-item">
-                        ${record.recordImei}
+                        ${record.updateTime}
                 </td>
 
                 <td class="record-item">
-                        ${record.updateTime}
+                        ${record.isDeleted}
                 </td>
             </tr>
         </c:forEach>

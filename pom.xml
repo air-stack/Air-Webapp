@@ -5,8 +5,8 @@
 
     <groupId>com.ten.air</groupId>
     <artifactId>web</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <name>Air-Webapp</name>
     <url>Web Server for Air</url>
@@ -51,31 +51,31 @@
             <scope>provided</scope>
             <version>${tomcat.version}</version>
         </dependency>
-        <!--&lt;!&ndash; JSP &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.tomcat</groupId>-->
-            <!--<artifactId>tomcat-jsp-api</artifactId>-->
-            <!--<scope>provided</scope>-->
-            <!--<version>${tomcat.version}</version>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash; jstl &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>javax.servlet.jsp.jstl</groupId>-->
-            <!--<artifactId>jstl</artifactId>-->
-            <!--<version>1.2</version>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash; jstl-api &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>javax.servlet.jsp.jstl</groupId>-->
-            <!--<artifactId>jstl-api</artifactId>-->
-            <!--<version>1.2</version>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash; jstl-impl &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.glassfish.web</groupId>-->
-            <!--<artifactId>jstl-impl</artifactId>-->
-            <!--<version>1.2</version>-->
-        <!--</dependency>-->
+        <!-- JSP -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jsp-api</artifactId>
+            <scope>provided</scope>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <!-- jstl -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!-- jstl-api -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!-- jstl-impl -->
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jstl-impl</artifactId>
+            <version>1.2</version>
+        </dependency>
     </dependencies>
 
     <build>
