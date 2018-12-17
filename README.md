@@ -34,6 +34,10 @@ jsp + servlet + jdbc + mysql
 
 ```
 
+### 异常处理
+
+若启动后遇到404错误，可能是jstl导入问题，将pom.xml中的三个jstl相关包注释掉，刷新，然后再取消注释，刷新。即可。
+
 ## DEMO
 
 ![登录](images/登录.png)

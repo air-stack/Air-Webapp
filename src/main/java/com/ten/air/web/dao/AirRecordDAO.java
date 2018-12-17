@@ -22,7 +22,7 @@ public class AirRecordDAO {
         return DAO;
     }
 
-    private static final String SELECT_ALL = "SELECT * FROM air_record";
+    private static final String SELECT_ALL = "SELECT * FROM air_record ORDER BY update_time desc";
 
     /**
      * 获取所有数据

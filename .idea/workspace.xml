@@ -3,14 +3,17 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="Air-Webapp:war" />
+      <artifact name="Air-Webapp:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="144e6774-2118-4c3e-b0d7-0cc63affbdb1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/air/web/dao/AirRecordDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/air/web/dao/AirRecordDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/data.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/data.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/air/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/air/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/air/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/air/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,8 +38,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+            <state relative-caret-position="357">
+              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -53,8 +56,23 @@
       <file leaf-file-name="data.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/data.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="250">
+              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="168">
+                <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -89,8 +107,8 @@
       <file leaf-file-name="AirRecordDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/dao/AirRecordDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="224">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,19 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AirRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/entity/AirRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="924">
               <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
             </state>
           </provider>
@@ -154,16 +163,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/util/JdbcConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/constant/MysqlConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/constant/AirRecord.sql" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/entity/AirRecord.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/constant/MysqlConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/util/JdbcConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/service/AirRecordService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/dao/AirRecordDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/controller/AirRecordController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/air/web/dao/AirRecordDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/data.jsp" />
       </list>
     </option>
@@ -206,7 +215,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,13 +310,6 @@
               <item name="Air-Webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Air-Webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Air-Webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,8 +324,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,24 +332,24 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15795207" />
     <property name="project.structure.side.proportion" value="0.38919514" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\java\com\ten\air\constant" />
       <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\webapp" />
+      <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\webapp\js" />
       <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ten.air.web.entity" />
       <recent name="com.ten.air.entity" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\java\com\ten\air\constant" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\webapp" />
-      <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\webapp\js" />
       <recent name="C:\Users\ten\Desktop\Java\air-web\src\main\resources" />
     </key>
   </component>
@@ -473,6 +475,7 @@
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Air-Webapp:war" />
+          <artifact name="Air-Webapp:war" />
         </option>
       </method>
     </configuration>
@@ -507,7 +510,8 @@
       <workItem from="1544528825620" duration="2276000" />
       <workItem from="1544582470986" duration="396000" />
       <workItem from="1544618134194" duration="2366000" />
-      <workItem from="1544966900565" duration="1703000" />
+      <workItem from="1544966900565" duration="2446000" />
+      <workItem from="1545043170617" duration="1300000" />
     </task>
     <task id="LOCAL-00001" summary="air web">
       <created>1541736419856</created>
@@ -579,11 +583,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544452508989</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="solve bug : tomcat error">
+      <created>1544968830541</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544968830541</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47224000" />
+    <option name="totallyTimeSpent" value="49267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -609,18 +620,18 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38257018" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36484492" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24898785" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25303644" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +647,8 @@
     <MESSAGE value="readme" />
     <MESSAGE value="improve" />
     <MESSAGE value="Air Webapp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Air Webapp" />
+    <MESSAGE value="solve bug : tomcat error" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve bug : tomcat error" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/service/UserService.java">
@@ -857,16 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="74">
-            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/util/JdbcConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -888,27 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/service/AirRecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/entity/AirRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/dao/AirRecordDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,7 +913,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="924">
           <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
@@ -942,8 +927,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        <state relative-caret-position="357">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="168">
+            <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/service/AirRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/air/web/dao/AirRecordDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,8 +968,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/data.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="250">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -969,9 +984,9 @@
           <artifact-editor>
             <show-content>
               <type id="javaee-facet-resources" />
-              <type id="jpa-descriptors" />
               <type id="artifact" />
               <type id="library" />
+              <type id="jpa-descriptors" />
             </show-content>
           </artifact-editor>
           <last-edited>Air-Webapp:war</last-edited>
@@ -1046,7 +1061,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.google.protobuf:protobuf-java:2.6.0</last-edited>
+          <last-edited>Maven: org.slf4j:slf4j-log4j12:1.7.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

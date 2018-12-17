@@ -7,10 +7,10 @@
 <body>
 
 <div id="records">
-    <div>共有 ${records.size()}</div>
+    <div>共有 ${records.size()} 条记录</div>
 
     <%--@elvariable id="records" type="java.util.List"--%>
-    <table>
+    <table border="1" cellpadding="0" cellspacing="0" style="table-layout: auto">
         <tr>
             <th>ID</th>
             <th>设备号</th>
@@ -25,40 +25,45 @@
 
         <c:forEach items="${records}" var="record">
             <tr class="record-object">
-                <td class="record-item">
+                <td class="record-item" align="center">
                         ${record.id}
                 </td>
 
-                <td class="record-item">
+                <td class="record-item" align="center">
                         ${record.imei}
                 </td>
 
-                <td class="record-item">
-                        ${record.temperature}
+                <td class="record-item" align="center">
+                        ${record.temperature} ℃
                 </td>
 
-                <td class="record-item">
-                        ${record.pm25}
+                <td class="record-item" align="center">
+                        ${record.pm25} ppm
                 </td>
 
-                <td class="record-item">
-                        ${record.co2}
+                <td class="record-item" align="center">
+                        ${record.co2} ppm
                 </td>
 
-                <td class="record-item">
-                        ${record.so2}
+                <td class="record-item" align="center">
+                        ${record.so2} ppm
                 </td>
 
-                <td class="record-item">
-                        ${record.recordTime}
-                </td>
-
-                <td class="record-item">
+                <td class="record-item" align="center">
                         ${record.updateTime}
                 </td>
 
-                <td class="record-item">
-                        ${record.isDeleted}
+                <td class="record-item" align="center">
+                        ${record.updateTime}
+                </td>
+
+                <td class="record-item" align="center">
+                    <c:if test="${record.isDeleted==0}">
+                        记录正常
+                    </c:if>
+                    <c:if test="${record.isDeleted==1}">
+                        记录过期
+                    </c:if>
                 </td>
             </tr>
         </c:forEach>
@@ -69,8 +74,8 @@
 
 <style>
     body {
-        height: 1000px;
-        width: 1000px;
+        height: 100%;
+        width: 100%;
     }
 
     #records {
@@ -86,6 +91,7 @@
 
     .record-item {
         color: blue;
+        width: 10%;
     }
 </style>
 
