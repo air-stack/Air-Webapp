@@ -1,10 +1,10 @@
 # Air Webapp
 
-> 大气环境检测系统的WEB数据展示网站，只有简单的登录+展示两个界面，后端采用Servlet+Jdbc搭建，方便理解和掌握。
+> WEB数据展示网站，基于Servlet+Jdbc搭建，进行监测数据的展示。
 
 ## 技术栈
 
-jsp + servlet + jdbc + mysql 
+Jsp + Servlet + Jdbc + Mysql 
 
 > 登录账号:admin 登录密码:123456
 
