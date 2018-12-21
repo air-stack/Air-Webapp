@@ -7,7 +7,7 @@
 <body>
 <%
     // 页面每隔3秒自动刷新一遍
-    response.setHeader("refresh", "3;URL=http://127.0.0.1:8080/air/record.do");
+    response.setHeader("refresh", "3;URL=record.do");
 %>
 <div id="records">
     <div>展示最近 ${records.size()} 条记录</div>
