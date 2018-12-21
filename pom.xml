@@ -9,7 +9,7 @@
     <packaging>war</packaging>
 
     <name>Air-Webapp</name>
-    <url>Web Server for Air</url>
+    <url>Webapp for Air</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -58,6 +58,8 @@
             <scope>provided</scope>
             <version>${tomcat.version}</version>
         </dependency>
+
+        <!-- 发生404异常时，注释掉以下三个jstl包，刷新，取消注释，刷新。 -->
         <!-- jstl -->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>

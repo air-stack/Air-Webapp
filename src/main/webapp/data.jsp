@@ -5,9 +5,12 @@
     <title>大气监测数据</title>
 </head>
 <body>
-
+<%
+    // 页面每隔3秒自动刷新一遍
+    response.setHeader("refresh", "3;URL=http://127.0.0.1:8080/air/record.do");
+%>
 <div id="records">
-    <div>共有 ${records.size()} 条记录</div>
+    <div>展示最近 ${records.size()} 条记录</div>
 
     <%--@elvariable id="records" type="java.util.List"--%>
     <table border="1" cellpadding="0" cellspacing="0" style="table-layout: auto">
@@ -15,9 +18,9 @@
             <th>ID</th>
             <th>设备号</th>
             <th>温度</th>
-            <th>PM2.5</th>
-            <th>CO2浓度</th>
-            <th>SO2浓度</th>
+            <th>湿度</th>
+            <th>PM25</th>
+            <th>未定义</th>
             <th>记录时间</th>
             <th>更新时间</th>
             <th>过期标记</th>
@@ -38,15 +41,15 @@
                 </td>
 
                 <td class="record-item" align="center">
+                        ${record.humidity} %
+                </td>
+
+                <td class="record-item" align="center">
                         ${record.pm25} ppm
                 </td>
 
                 <td class="record-item" align="center">
-                        ${record.co2} ppm
-                </td>
-
-                <td class="record-item" align="center">
-                        ${record.so2} ppm
+                        ${record.undefinedData} ppm
                 </td>
 
                 <td class="record-item" align="center">
@@ -58,6 +61,9 @@
                 </td>
 
                 <td class="record-item" align="center">
+                    <c:if test="${record.isDeleted==-1}">
+                        记录正常
+                    </c:if>
                     <c:if test="${record.isDeleted==0}">
                         记录正常
                     </c:if>

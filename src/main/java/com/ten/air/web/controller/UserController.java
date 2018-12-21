@@ -11,12 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 用户登录验证
- *
- * @author wshten
- * @date 2018/11/9
+ * 用户登录验证的controller控制器
  */
 public class UserController extends HttpServlet {
+
     private volatile UserService service = new UserService();
 
     /**
@@ -48,6 +46,7 @@ public class UserController extends HttpServlet {
             req.getRequestDispatcher(SUCCESS).forward(req, resp);
         } else {
             System.out.println("User Login Failure:" + name + "," + password);
+            // alert弹出提示信息
             req.setAttribute("errormsg", "登录失败");
             req.getRequestDispatcher(FAIL).forward(req, resp);
         }

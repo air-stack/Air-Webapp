@@ -2,8 +2,6 @@ package com.ten.air.web.dao;
 
 import com.ten.air.web.entity.AirRecord;
 import com.ten.air.web.util.JdbcConnection;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -22,10 +20,13 @@ public class AirRecordDAO {
         return DAO;
     }
 
-    private static final String SELECT_ALL = "SELECT * FROM air_record ORDER BY update_time desc";
+    /**
+     * FIXME 展示最近的20条信息
+     */
+    private static final String SELECT_ALL = "SELECT * FROM air_record ORDER BY update_time desc LIMIT 20";
 
     /**
-     * 获取所有数据
+     * 获取数据
      */
     public List<AirRecord> getAllRecord() throws SQLException {
         Connection c = JdbcConnection.getConnection();
@@ -36,18 +37,18 @@ public class AirRecordDAO {
         while (result.next()) {
             AirRecord record = new AirRecord();
 
+            // 数据库字段映射
             record.setId(Integer.valueOf(result.getString("id")));
             record.setSource(result.getString("source"));
             record.setImei(result.getString("imei"));
             record.setTemperature(result.getString("temperature"));
+            record.setHumidity(result.getString("humidity"));
             record.setPm25(result.getString("pm25"));
-            record.setCo2(result.getString("co2"));
-            record.setSo2(result.getString("so2"));
+            record.setUndefinedData(result.getString("undefined_data"));
             record.setRecordTime(result.getString("record_time"));
             record.setUpdateTime(result.getString("update_time"));
             record.setIsDeleted(Integer.valueOf(result.getString("is_deleted")));
 
-            System.out.println(String.valueOf(record));
             records.add(record);
         }
         return records;

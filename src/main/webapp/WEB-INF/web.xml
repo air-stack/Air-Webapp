@@ -19,6 +19,7 @@
         <url-pattern>*.jpeg</url-pattern>
     </servlet-mapping>
 
+    <!-- 获取数据 -->
     <servlet>
         <servlet-name>airRecordController</servlet-name>
         <servlet-class>com.ten.air.web.controller.AirRecordController</servlet-class>
@@ -28,6 +29,7 @@
         <url-pattern>/record.do</url-pattern>
     </servlet-mapping>
 
+    <!-- 登录 -->
     <servlet>
         <servlet-name>userController</servlet-name>
         <servlet-class>com.ten.air.web.controller.UserController</servlet-class>

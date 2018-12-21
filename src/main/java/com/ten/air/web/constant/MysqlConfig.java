@@ -10,7 +10,6 @@ public class MysqlConfig {
     private static final int PORT = 3306;
     // 数据库名称
     private static final String DATABASE = "air_server";
-
     // 数据库登录用户名
     public static final String USER = "root";
     // 数据库登录密码
@@ -19,5 +18,4 @@ public class MysqlConfig {
     public static final String URL = String.format(
             "jdbc:mysql://%s:%d/%s" + "?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false",
             HOST, PORT, DATABASE);
-
 }

@@ -2,6 +2,8 @@ package com.ten.air.web.entity;
 
 /**
  * Atmospheric monitoring record 大气监测记录
+ * <p>
+ * 需与Protocol中的AirRecord字段保持同步，但若直接使用Protocol中的类，则会导致CNF异常
  */
 public class AirRecord {
     /**
@@ -21,17 +23,17 @@ public class AirRecord {
      */
     private String temperature;
     /**
-     * PM 2.5 Concentration
+     * Humidity 湿度
+     */
+    private String humidity;
+    /**
+     * PM 2.5 Concentration PM25浓度
      */
     private String pm25;
     /**
-     * Carbon Dioxide Concentration CO2浓度
+     * Undefined data 待定义数据
      */
-    private String co2;
-    /**
-     * Sulful Dioxide Concentration SO2浓度
-     */
-    private String so2;
+    private String undefinedData;
     /**
      * Record Time 记录时间
      */
@@ -45,23 +47,23 @@ public class AirRecord {
      */
     private Integer isDeleted;
 
-    public AirRecord() {
-    }
-
     @Override
     public String toString() {
         return "AirRecord{" +
                 "id=" + id +
-                ", source=" + source + '\'' +
+                ", source='" + source + '\'' +
                 ", imei='" + imei + '\'' +
                 ", temperature='" + temperature + '\'' +
+                ", humidity='" + humidity + '\'' +
                 ", pm25='" + pm25 + '\'' +
-                ", co2='" + co2 + '\'' +
-                ", so2='" + so2 + '\'' +
+                ", undefinedData='" + undefinedData + '\'' +
                 ", recordTime='" + recordTime + '\'' +
                 ", updateTime='" + updateTime + '\'' +
                 ", isDeleted=" + isDeleted +
                 '}';
+    }
+
+    public AirRecord() {
     }
 
     public String getSource() {
@@ -104,20 +106,20 @@ public class AirRecord {
         this.temperature = temperature;
     }
 
-    public String getCo2() {
-        return co2;
+    public String getHumidity() {
+        return humidity;
     }
 
-    public void setCo2(String co2) {
-        this.co2 = co2;
+    public void setHumidity(String humidity) {
+        this.humidity = humidity;
     }
 
-    public String getSo2() {
-        return so2;
+    public String getUndefinedData() {
+        return undefinedData;
     }
 
-    public void setSo2(String so2) {
-        this.so2 = so2;
+    public void setUndefinedData(String undefinedData) {
+        this.undefinedData = undefinedData;
     }
 
     public String getRecordTime() {

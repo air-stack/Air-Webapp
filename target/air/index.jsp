@@ -27,7 +27,7 @@
     // 弹出登录信息
     $(document).ready(function (c) {
         var error = '${errormsg}';
-        if (error != null) {
+        if (error != null && error.length > 1) {
             alert(error)
         }
     });

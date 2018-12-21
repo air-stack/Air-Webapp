@@ -1,8 +1,6 @@
 package com.ten.air.web.util;
 
 import com.ten.air.web.constant.MysqlConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,9 +8,6 @@ import java.sql.SQLException;
 
 /**
  * Mysql数据库连接
- *
- * @author wshten
- * @date 2018/11/9
  */
 public class JdbcConnection {
 
