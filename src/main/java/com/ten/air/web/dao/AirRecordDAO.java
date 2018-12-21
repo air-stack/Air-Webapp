@@ -23,7 +23,7 @@ public class AirRecordDAO {
     /**
      * FIXME 展示最近的20条信息
      */
-    private static final String SELECT_ALL = "SELECT * FROM air_record ORDER BY update_time desc LIMIT 20";
+    private static final String SELECT_ALL = "SELECT * FROM air_record ORDER BY record_time desc LIMIT 20";
 
     /**
      * 获取数据

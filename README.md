@@ -30,6 +30,14 @@ Webapp通过Jdbc访问MySQL数据库，将数据实时展示到WEB网站。
 # 4. 配置Tomcat，启动项目
 ```
 
+## 服务器部署
+
+1. 打包成war(通过IDEA打包)，修改war名为air（通过/air访问项目）
+
+2. 上传到服务器Tomcat/webapps目录下
+
+3. 启动Tomcat
+
 ### 异常处理
 
 若启动后遇到404错误，可能是jstl导入问题，将pom.xml中的三个jstl相关包注释掉，刷新，然后再取消注释，刷新。即可。
