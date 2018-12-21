@@ -53,11 +53,11 @@
                 </td>
 
                 <td class="record-item" align="center">
-                        ${record.updateTime}
+                        ${record.recordTime}
                 </td>
 
                 <td class="record-item" align="center">
-                        ${record.updateTime}
+                        ${record.recordTime}
                 </td>
 
                 <td class="record-item" align="center">
