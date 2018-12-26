@@ -13,7 +13,7 @@ public class MysqlConfig {
     // 数据库登录用户名
     public static final String USER = "root";
     // 数据库登录密码
-    public static final String PASSWORD = "wangshihao";
+    public static final String PASSWORD = "zhu960618";
     // 数据库URL
     public static final String URL = String.format(
             "jdbc:mysql://%s:%d/%s" + "?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false",

@@ -31,6 +31,14 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.2</version>
         </dependency>
+
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
+        </dependency>
+
         <!-- Junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -38,12 +46,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <!-- mysql -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.11</version>
-        </dependency>
+
         <!-- Servlet -->
         <dependency>
             <groupId>org.apache.tomcat</groupId>
@@ -51,6 +54,7 @@
             <scope>provided</scope>
             <version>${tomcat.version}</version>
         </dependency>
+
         <!-- JSP -->
         <dependency>
             <groupId>org.apache.tomcat</groupId>
@@ -59,24 +63,37 @@
             <version>${tomcat.version}</version>
         </dependency>
 
-        <!-- 发生404异常时，注释掉以下三个jstl包，刷新，取消注释，刷新。 -->
-        <!-- jstl -->
-        <dependency>
-            <groupId>javax.servlet.jsp.jstl</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
-        <!-- jstl-api -->
+        <!-- JSTL -->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl-api</artifactId>
-            <version>1.2</version>
+            <version>${jstl.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>servlet-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.servlet.jsp</groupId>
+                    <artifactId>jsp-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-        <!-- jstl-impl -->
+
         <dependency>
             <groupId>org.glassfish.web</groupId>
             <artifactId>jstl-impl</artifactId>
-            <version>1.2</version>
+            <version>${jstl.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>servlet-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.servlet.jsp</groupId>
+                    <artifactId>jsp-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
