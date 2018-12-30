@@ -32,9 +32,9 @@ public class AirRecordController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<AirRecord> records = service.getAllRecord();
-        System.out.println("Records:" + records);
-        req.setAttribute("records", records);
+        AirRecord record = service.selectLast();
+        System.out.println("Record:" + record);
+        req.setAttribute("record", record);
         req.getRequestDispatcher(URL).forward(req, resp);
     }
 }

@@ -9,70 +9,39 @@
     // 页面每隔3秒自动刷新一遍
     response.setHeader("refresh", "3;URL=record.do");
 %>
-<div id="records">
-    <div>展示最近 ${records.size()} 条记录</div>
+<div id="record">
 
-    <%--@elvariable id="records" type="java.util.List"--%>
+    <div>实时数据展示：</div>
+
+    <%--@elvariable id="record" type="java.util.List"--%>
     <table border="1" cellpadding="0" cellspacing="0" style="table-layout: auto">
         <tr>
-            <th>ID</th>
             <th>设备号</th>
-            <th>温度</th>
-            <th>湿度</th>
-            <th>PM25</th>
-            <th>未定义</th>
-            <th>记录时间</th>
-            <th>更新时间</th>
-            <th>过期标记</th>
+            <th>当前温度</th>
+            <th>当前湿度</th>
+            <th>当前PM25</th>
         </tr>
 
-        <c:forEach items="${records}" var="record">
-            <tr class="record-object">
-                <td class="record-item" align="center">
-                        ${record.id}
-                </td>
 
-                <td class="record-item" align="center">
-                        ${record.imei}
-                </td>
+        <tr class="record-object">
 
-                <td class="record-item" align="center">
-                        ${record.temperature} ℃
-                </td>
+            <td class="record-item" align="center">
+                ${record.imei}
+            </td>
 
-                <td class="record-item" align="center">
-                        ${record.humidity} %
-                </td>
+            <td class="record-item" align="center">
+                ${record.temperature} ℃
+            </td>
 
-                <td class="record-item" align="center">
-                        ${record.pm25} ppm
-                </td>
+            <td class="record-item" align="center">
+                ${record.humidity} %
+            </td>
 
-                <td class="record-item" align="center">
-                        ${record.undefinedData} ppm
-                </td>
+            <td class="record-item" align="center">
+                ${record.pm25} ppm
+            </td>
 
-                <td class="record-item" align="center">
-                        ${record.recordTime}
-                </td>
-
-                <td class="record-item" align="center">
-                        ${record.recordTime}
-                </td>
-
-                <td class="record-item" align="center">
-                    <c:if test="${record.isDeleted==-1}">
-                        记录正常
-                    </c:if>
-                    <c:if test="${record.isDeleted==0}">
-                        记录正常
-                    </c:if>
-                    <c:if test="${record.isDeleted==1}">
-                        记录过期
-                    </c:if>
-                </td>
-            </tr>
-        </c:forEach>
+        </tr>
     </table>
 </div>
 
@@ -84,7 +53,7 @@
         width: 100%;
     }
 
-    #records {
+    #record {
         height: 100%;
         width: 100%;
         float: left;
