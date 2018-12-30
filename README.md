@@ -32,6 +32,8 @@ Webapp通过Jdbc访问MySQL数据库，将数据实时展示到WEB网站。
 
 ## 服务器部署
 
+> 已将打包好的war文件放在目录下：air.war
+
 1. 打包成war(通过IDEA打包)，修改war名为air（通过/air访问项目）
 
 2. 上传到服务器Tomcat/webapps目录下
