@@ -55,7 +55,9 @@ div.skill {
 }
 
 .rating {
+    float: left;
     margin-left: 30px;
+    font-size: 18px;
 }
 
 .footerQR {

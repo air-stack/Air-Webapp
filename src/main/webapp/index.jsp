@@ -2,14 +2,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>大气质量监测系统</title>
+    <title>Air-大气质量监测系统</title>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
           content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates"/>
 
-    <link href="css/style.css" rel='stylesheet' type='text/css'/>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href="static/css/style.css" rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
 </head>
 
 <script type="application/javascript">
@@ -24,7 +25,7 @@
 </script>
 
 <script type="application/javascript">
-    // 弹出登录信息
+    // 弹出登录错误信息
     $(document).ready(function (c) {
         var error = '${errormsg}';
         if (error != null && error.length > 1) {
@@ -44,7 +45,7 @@
     </div>
     <div class="clear"></div>
     <div class="avtar">
-        <img src="img/avtar.png"/>
+        <img src="static/image/avtar.png"/>
     </div>
     <form action="login.do" method="post">
         <label>

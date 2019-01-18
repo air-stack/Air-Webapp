@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class AirRecordController extends HttpServlet {
 
-    private static final String URL = "/data.jsp";
+    private static final String URL = "/WEB-INF/view/data.jsp";
 
     private AirRecordService service = AirRecordService.getService();
 
@@ -30,8 +30,12 @@ public class AirRecordController extends HttpServlet {
         doPost(req, resp);
     }
 
+    /**
+     * TODO 可以结合data.jsp需要的数据从数据库进行获取，暂时没做这部分功能，前端数据直接使用mock
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // 获取最新的数据
         AirRecord record = service.selectLast();
         System.out.println("Record:" + record);
         req.setAttribute("record", record);
