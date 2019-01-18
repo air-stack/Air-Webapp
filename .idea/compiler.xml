@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="air-web" />
         <module name="Air-Webapp" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
   </component>
