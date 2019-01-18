@@ -44,8 +44,16 @@ public class AirRecordService {
         }
 
         AirRecord last = new AirRecord();
-        last.setImei(result.get(0).getImei());
+        // 记录不存在
+        if (result.size() < 1) {
+            last.setImei("记录不存在");
+            last.setTemperature("0.0");
+            last.setHumidity("0.0");
+            last.setPm25("0");
+            return last;
+        }
 
+        last.setImei(result.get(0).getImei());
         result.forEach((item) -> {
             if (!"0.0".equals(item.getTemperature())) {
                 last.setTemperature(item.getTemperature());
@@ -57,7 +65,6 @@ public class AirRecordService {
                 last.setPm25(item.getPm25());
             }
         });
-
         return last;
     }
 }

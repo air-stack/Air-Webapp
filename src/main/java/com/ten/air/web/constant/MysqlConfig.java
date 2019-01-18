@@ -5,11 +5,11 @@ package com.ten.air.web.constant;
  */
 public class MysqlConfig {
     // Mysql数据库主机IP地址
-    private static final String HOST = "127.0.0.1";
+    private static final String HOST = "www.lifecat.club";
     // 数据库端口，默认3306
     private static final int PORT = 3306;
     // 数据库名称
-    private static final String DATABASE = "air_server";
+    private static final String DATABASE = "air";
     // 数据库登录用户名
     public static final String USER = "root";
     // 数据库登录密码
