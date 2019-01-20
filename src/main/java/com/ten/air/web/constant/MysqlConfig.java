@@ -5,7 +5,7 @@ package com.ten.air.web.constant;
  */
 public class MysqlConfig {
     // Mysql数据库主机IP地址
-    private static final String HOST = "localhost";
+    private static final String HOST = "www.lifecat.club";
     // 数据库端口，默认3306
     private static final int PORT = 3306;
     // 数据库名称

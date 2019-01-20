@@ -54,7 +54,7 @@ public class AirRecordService {
         }
 
         last.setImei(result.get(0).getImei());
-        result.forEach((item) -> {
+        for (AirRecord item : result) {
             if (!"0.0".equals(item.getTemperature())) {
                 last.setTemperature(item.getTemperature());
             }
@@ -64,7 +64,7 @@ public class AirRecordService {
             if (!"0".equals(item.getPm25())) {
                 last.setPm25(item.getPm25());
             }
-        });
+        }
         return last;
     }
 }
